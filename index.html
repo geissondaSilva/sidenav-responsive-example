@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Sidenav Responsiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="sidenav-container modal">
+        <div id="sidenav" class="sidenav">
+            <div class="sidenav-header">
+                <button onclick="toggle()" class="sidenav-button">
+                    <i class="material-icons">menu</i>
+                </button>
+                <img id="logo" class="sidenav-button-opened" src="./assets/youtube.png" alt="">
+            </div>
+            <div class="sidenav-links">
+                <a class="sidenav-link">
+                    <div class="sidenav-link-icon">
+                        <i class="material-icons">home</i>
+                    </div>
+                    <div class="sidenav-link-label">Inicio</div>
+                </a>
+                <a class="sidenav-link">
+                    <div class="sidenav-link-icon">
+                        <i class="material-icons">feed</i>
+                    </div>
+                    <div class="sidenav-link-label">Notícias</div>
+                </a>
+            </div>
+        </div>
+        <div id="modal-bg"></div>
+        <div class="sidenav-content">
+            <h3>Este é um texto de explo de uma modal resposiva em html nativo</h3>
+        </div>
+    </div>
+</body>
+</html>

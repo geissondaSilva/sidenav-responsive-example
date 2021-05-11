@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.sidenav-container {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.sidenav-content {
+    flex-grow: 1;
+}
+
+.modal .sidenav-content {
+    padding-left: 48px;
+}
+
+.modal .sidenav {
+    position: absolute;
+    height: 100%;
+}
+
+.sidenav {
+    width: 300px;
+    background-color: white;
+    border-right: 1px solid #ccc;
+    transition: width 400ms ease-in;
+}
+
+.sidenav-button {
+    width: 48px;
+    height: 48px;
+    color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.sidenav-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+
+#logo {
+    transition: all 400ms ease-in;
+}
+
+.sidenav-button-opened {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 24px;
+}
+
+.sidenav-button-closed {
+    height: 24px;
+    width: 24px;
+    margin-left: 12px;
+}
+
+.sidenav-link {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.sidenav-link:hover {
+    background-color: #f1f1f1;
+}
+
+.sidenav-link-icon {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    min-width: 48px;
+}
+
+.sidenav-link-label {
+    width: calc(300px - 48px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes bgModalAnimation {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 0.3;
+    }
+}
+
+#modal-bg {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    animation-name: bgModalAnimation;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in;
+}
